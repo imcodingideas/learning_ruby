@@ -7,9 +7,25 @@ depending on the following rules replace some of the numbers by words.
 "Buzz" for multiples of 5
 The same number to any other value.
 
-Create the fizzbuz method receives as a parameter two integers (min and max)
+Create the fizzbuzz method receives as a parameter two integers (min and max)
 and returns an Array from min to max replacing them with rules fizzbuzz.
 =end
+
+def fizzbuzz(min, max)
+	super_array = Array.new
+	(min..max).each do |num|
+		if num % 5 == 0 and num % 3 == 0
+			super_array.push("FizzBuzz")
+		elsif num % 5 == 0
+			super_array.push("Buzz")
+		elsif num % 3 == 0
+			super_array.push("Fizz")
+		else
+			super_array.push(num)
+		end
+	end
+	super_array
+end
 
 # test
 p fizzbuzz(3, 5) == ["Fizz", 4, "Buzz"]
