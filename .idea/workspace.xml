@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="107dce50-1b44-421a-af3d-d14586a1a87e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day_3/array_index_2.rb" afterPath="$PROJECT_DIR$/day_3/array_index_2.rb" />
     </list>
     <ignored path="learning_ruby.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +22,7 @@
     <favorites_list name="learning_ruby" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.34275407">
+    <splitter split-orientation="horizontal" split-proportion="0.4275406">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="sum_numbers_in_array.rb" pinned="false" current-in-tab="false">
@@ -90,14 +89,12 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="array_index_2.rb" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/day_3/array_index_2.rb">
+          <file leaf-file-name="fizzbuzz.rb" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/day_3/fizzbuzz.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="399">
-                  <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="false" />
-                  </folding>
+                <state relative-caret-position="189">
+                  <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -118,7 +115,9 @@
         <option value="$PROJECT_DIR$/day_3/index_of_an_array.rb" />
         <option value="$PROJECT_DIR$/day_3/forming_arrays.rb" />
         <option value="$PROJECT_DIR$/day_3/look_for_numers_in_list.rb" />
+        <option value="$PROJECT_DIR$/day_3/scratch.rb" />
         <option value="$PROJECT_DIR$/day_3/array_index_2.rb" />
+        <option value="$PROJECT_DIR$/day_3/fizzbuzz.rb" />
       </list>
     </option>
   </component>
@@ -328,12 +327,12 @@
       <updated>1470232250513</updated>
       <workItem from="1470232251831" duration="8846000" />
       <workItem from="1470242925074" duration="133000" />
-      <workItem from="1470243079398" duration="8361000" />
+      <workItem from="1470243079398" duration="8880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17340000" />
+    <option name="totallyTimeSpent" value="17859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -518,13 +517,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/day_3/scratch.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/day_3/array_index_2.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="521">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day_3/fizzbuzz.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
