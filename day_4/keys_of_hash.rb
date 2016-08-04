@@ -4,9 +4,7 @@ of the hash. For this exercise uses a variant of each method. Create a test meth
 =end
 
 def secret_identities(super_heros)
-	super_heros.each_key do |identity|
-		return "#{identity}"
-	end
+	super_heros.each_key { |identity| return "#{identity}" }
 end
 
 p secret_identities({'The Batman' => 'Bruce Wayne'}) == 'The Batman'
