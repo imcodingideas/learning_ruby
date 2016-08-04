@@ -6,20 +6,20 @@ as well as a factor and should return an array like the following:
 def array_index(array_of_letters, repeater)
 	master_array = Array.new
 
-	array_of_letters.each do |char|
+	array_of_letters.each { |char|
 		#store array of the repeated
 		repeated_array = Array.new
 
 		starts_at = 1
 		#interate over the the repeater
-		repeater.times do
+		repeater.times {
 			repeated_array.push(starts_at)
 			starts_at += 1
-		end
+		}
 
 		#push to the master_array
 		master_array.push([char, repeated_array])
-	end
+	}
 
 	master_array
 end
