@@ -1,24 +1,21 @@
-#todo
-
 def language(speak)
-	case speak
-	when speak == 'JavaScript'
+	if speak == 'JavaScript'
 		'I like JavaScript'
-	when speak == 'CSS'
+	elsif speak == 'CSS'
 		'I like CSS'
-	when speak == 'Python'
+	elsif speak == 'Python'
 		'I like Python'
-	when speak == 'R'
+	elsif speak == 'R'
 		'I like R'
-	when speak == 'C++'
+	elsif speak == 'C++'
 		'I like C++'
-	when speak == 'Unity'
+	elsif speak == 'Unity'
 		'I like Unity'
-	when speak == 'Ruby'
+	elsif speak == 'Ruby'
 		'I like Ruby'
-	when speak == 'Ruby on Rails'
+	elsif speak == 'Ruby on Rails'
 		'I like Ruby on Rails'
-	when speak == 'Java'
+	elsif speak == 'Java'
 		'I like Java'
 	else
 		'I don\'t like to code'
@@ -26,6 +23,6 @@ def language(speak)
 end
 
 #test
-p language('JavaScript') #== 'I like JavaScript'
-p language('Unity') #== 'I like Unity'
+p language('JavaScript') == 'I like JavaScript'
+p language('Unity') == 'I like Unity'
 p language('Swin') == 'I don\'t like to code'
