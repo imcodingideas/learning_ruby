@@ -7,8 +7,8 @@ it returns an array with a single element
 =end
 
 def mode(array)
-	count = []
-	output = []
+	count = Array.new
+	output = Array.new
 	array.compact
 	unique = array.uniq
 	j=0
