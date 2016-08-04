@@ -4,7 +4,7 @@ For this exercise use a variant of each method. Create a test method.
 =end
 
 def secret_identities(super_heros)
-	return super_heros.each_value { |identity| return "#{identity}" }
+	super_heros.each_value { |identity| return "#{identity}" }
 end
 
 p secret_identities({'The Batman' => 'Bruce Wayne'}) == 'Bruce Wayne'
