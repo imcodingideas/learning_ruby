@@ -4,12 +4,12 @@ of the hash. For this exercise uses a variant of each method. Create a test meth
 =end
 
 def secret_identities(super_heros)
-	super_heros.each do |cover, name|
-		return "#{cover}: #{name}"
+	super_heros.each_key do |identity|
+		return "#{identity}"
 	end
 end
 
-p secret_identities('The Batman' => 'Bruce Wayne') == 'The Batman: Bruce Wayne'
-p secret_identities('Superman' => 'Clark Kent') == 'Superman: Clark Kent'
-p secret_identities('Wonder Woman' => 'Diana Prince') == 'Wonder Woman: Diana Prince'
-p secret_identities('Freakazoid' => 'Dexter Douglas') == 'Freakazoid: Dexter Douglas'
+p secret_identities({'The Batman' => 'Bruce Wayne'}) == 'The Batman'
+p secret_identities({'Superman' => 'Clark Kent'}) == 'Superman'
+p secret_identities({'Wonder Woman' => 'Diana Prince'}) == 'Wonder Woman'
+p secret_identities({'Freakazoid' => 'Dexter Douglas'}) == 'Freakazoid'
