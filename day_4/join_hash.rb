@@ -3,8 +3,9 @@ Defines a method join_hash that receives three hashes and returns the
 union of the hashes. Cannot use merge.
 =end
 
-def join_hash()
-
+def join_hash(fruit)
+	joined_hash = Hash.new(0)
+	joined_hash.push({fruit})
 end
 
 fruit = {name: 'pineapple'}
@@ -13,4 +14,5 @@ taste = {taste: 'good'}
 
 
 #test
-p join_hash(fruit, weight, taste) == {:name=> 'pineapple', :weight=> '1 kg', :taste=> 'good'}
+p join_hash(fruit) #== {:name=> 'pineapple', :weight=> '1 kg', :taste=> 'good'}
+# p join_hash(fruit, weight, taste) #== {:name=> 'pineapple', :weight=> '1 kg', :taste=> 'good'}
