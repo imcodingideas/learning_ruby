@@ -1,7 +1,5 @@
 def shopping(list)
-	basket_shopping = Array.new
-
-	list.join(', ') if basket_shopping.empty?
+	list.join(', ')
 end
 
 #test
