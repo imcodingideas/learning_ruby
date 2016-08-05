@@ -1,15 +1,10 @@
-#todo
+=begin
+Refactor in a line of code and corrects the necessary code,
+so that the test is true. The test can not be changed.
+=end
 
-def is_true?
-	[1, 3, 5].respond_to?(:to_sym)
-end
-
-def validate
-	if is_true?
-		true
-	else
-		false
-	end
+def validate(arr)
+	!arr.respond_to?(:to_s)
 end
 
 #test
