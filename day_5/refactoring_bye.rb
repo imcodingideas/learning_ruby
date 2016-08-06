@@ -1,6 +1,6 @@
 #Refactor to one line of code:
 def bye(numbers)
-	list = Array.new ; numbers.each { |number| (number < 10) ? list << 'Smaller' : list << number } ; list
+	list = Array.new ; numbers.map { |number| (number < 10) ? list << 'Smaller' : list << number } ; list
 end
 
 #test
