@@ -44,8 +44,8 @@
           <file leaf-file-name="refactoring_bye.rb" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/day_5/refactoring_bye.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="42">
-                  <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+                <state relative-caret-position="63">
+                  <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -308,12 +308,12 @@
       <workItem from="1470272534568" duration="4553000" />
       <workItem from="1470319672760" duration="26345000" />
       <workItem from="1470407382955" duration="7798000" />
-      <workItem from="1470446502767" duration="282000" />
+      <workItem from="1470446502767" duration="823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72815000" />
+    <option name="totallyTimeSpent" value="73356000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -692,8 +692,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day_5/refactoring_bye.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        <state relative-caret-position="63">
+          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
           <folding />
         </state>
       </provider>

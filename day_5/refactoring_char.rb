@@ -1,5 +1,5 @@
 def char
-	chars = %w(A B C D E F G H I J K) ; char_by_char = [] ; chars.map { |char| char_by_char << char } ; char_by_char.join(', ')
+	%w(A B C D E F G H I J K).map { |char| char }.join(', ')
 end
 
 #test
