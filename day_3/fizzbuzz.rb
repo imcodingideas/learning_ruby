@@ -15,13 +15,13 @@ def fizzbuzz(min, max)
 	super_array = Array.new
 	(min..max).each do |num|
 		if num % 5 == 0 and num % 3 == 0
-			super_array.push("FizzBuzz")
+			super_array << "FizzBuzz"
 		elsif num % 5 == 0
-			super_array.push("Buzz")
+			super_array << "Buzz"
 		elsif num % 3 == 0
-			super_array.push("Fizz")
+			super_array << "Fizz"
 		else
-			super_array.push(num)
+			super_array << num
 		end
 	end
 	super_array
