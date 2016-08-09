@@ -8,8 +8,14 @@ If the three sides are the same size it is a cube.
 Your method should return the correct name of the figure according to the above rules.
 =end
 
-def prism_type(*args)
-
+def prism_type(one, two, three)
+  if one == two && three == two && one == three
+    "Cube"
+  elsif one == two || two == three
+    "rectangular prism"
+  else
+    "cuboid"
+  end
 end
 
 
