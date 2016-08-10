@@ -8,8 +8,8 @@ Maximum purchase.
 And how many expenses Array returns are less than 30 and are between the minimum and maximum purchase purchase.
 =end
 
-def total_shopping_budget(*args)
-
+def total_shopping_budget(cart_prices, min_purchase, max_purchase)
+  cart_prices.select { |item_value| item_value >= min_purchase && item_value <= max_purchase }.count
 end
 
 # Tests
