@@ -4,8 +4,9 @@ Make pass the test. Do not remove any part of the code and do not modify the tes
 
 def numbers(list)
   list.collect do |num|
-    num
+    num * 2
   end
+  list
 end
 
 #test
