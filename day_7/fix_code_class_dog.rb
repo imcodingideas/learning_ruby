@@ -3,26 +3,26 @@ Correct the class code Dog. Make it pass the tests.
 =end
 
 class  Dog
-  def  initialize (name, Color)
-    name = name
-    Color = colored
+  def  initialize (name, color)
+    @name = name
+    @color = color
   end
 
   def SHOW_NAME
-    name
+    @name
   end
 
   def change_color (new_color)
     @color = new_color
   end
 
-  def self.bark
-    "GUA Gua"
+  def bark
+    "Gua GUA GUA"
   end
 end
 
-dog1 = Dog.new
-dog2 = Dog.new
+dog1 = Dog.new('Max', 'Multi')
+dog2 = Dog.new('Princess', 'Black')
 
 #test
 p dog1.SHOW_NAME
