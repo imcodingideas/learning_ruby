@@ -14,12 +14,30 @@ You can also start a new game or quit.
 Source: http://ruby.about.com/od/beginningruby/ss/Worked-Example-Number-Guessing-Game.htm
 =end
 
+class NumberGuessingGame
+  def initialize
+    @number = rand(0..9).to_s
+  end
 
+  def guess
+    puts "I'm thinking of a random number from 0 to 9"
+    puts "Can you guess it?"
 
+    input = gets.chomp
+
+    if input == @number
+      puts 'You got.'
+    elsif input > @number
+      puts 'Too high'
+      guess
+    elsif input < @number
+      puts 'Too Low'
+      guess
+    end
+
+  end
+end
 
 # Tests
 game = NumberGuessingGame.new
-p game.guess(5) == "Too low"
-p game.guess(8) == "Too high"
-p game.guess(7) == "Too high"
-p game.guess(6) == "You got it!"
+game.guess
