@@ -3,8 +3,14 @@ Create the triangle_type method that receives parameters the size of the 3 sides
 The method should return the correct name of the figure according to the rules presented in the test.
 =end
 
-def triangle_type()
-
+def triangle_type(one, two, three)
+ if one == two && two == three
+   "Equilateral"
+   elsif one == two && two != three
+     "Isosceles"
+ else
+   "Scalene"
+ end
 end
 
 #test
