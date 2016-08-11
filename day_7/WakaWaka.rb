@@ -27,13 +27,13 @@ class WakaWaka
       '#' => 'hash',
       '^' => 'Caret',
       '"' => 'quote',
-      '`' => 'back-tick',
+      '`' => 'b tick',
       '$' => 'dollar',
       '-' => 'dash',
       '!' => 'Bang',
       '=' => 'equal',
       '@' => 'at',
-      '_' => 'underscore',
+      '_' => 'under',
       '%' => 'Percent',
       '~' => 'tilde',
       '4' => 'four',
@@ -41,10 +41,9 @@ class WakaWaka
   }
 
   def translate
-    @code.each_with_index do |symbol, index|
-      print "#{symbol} \t"
-      print "#{MAPPINGS.fetch(symbol, "unknown symbol")} \t"
-      puts index
+    @code.each_slice(7) do |symbols|
+      puts symbols.join("\t")
+      puts symbols.map {|sym| MAPPINGS.fetch(sym, "unknown symbol")  }.join("\t")
     end
   end
 
