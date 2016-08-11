@@ -1,5 +1,5 @@
 =begin
-What classes inherit behavior Dogand Cat superclass? Make the necessary tests to be true code.
+What classes inherit behavior Dog and Cat superclass? Make the necessary tests to be true code.
 =end
 
 class Animal
