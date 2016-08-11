@@ -10,6 +10,7 @@ def spray_paint(color)
 end
 
 big_door = spray_paint('green')
+big_door
 
 # test
 p big_door.spray_paint('yellow') == "The Yellow door looks great!"

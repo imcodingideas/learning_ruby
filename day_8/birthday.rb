@@ -6,18 +6,28 @@ Make sure the corresponding tests pass.
 class Person
   attr_accessor :age
 
+  @@age = 0
+  def initialize(age)
+    @age = age
+    @@age = age
+  end
+
   #Cannot modify this class method
   def self.birthday
     @@age += 1
   end
+
+  def birthday
+    @@age += 1
+  end
 end
 
-alice = Person.new
+alice = Person.new(17)
 
 # test
 alice.age = 17
 p alice.age == 17
 #=> true
-alice.@age
+alice.age
 p alice.birthday == 18
 #=> true

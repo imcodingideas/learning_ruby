@@ -12,6 +12,7 @@ class Computer
 end
 
 mac = Computer.new('Platinum')
+mac
 
 # test
 mac.color = 'Platinum'
