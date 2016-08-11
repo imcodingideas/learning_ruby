@@ -2,14 +2,19 @@
 Create the method spray_paint that can be called on an instance and change the color of the door. Make pass the test.
 =end
 
-def spray_paint(color)
+class Paint
   attr_accessor :color
+  def initialize(color)
+    @color = color
+  end
 
-  puts "The #{color} door looks great!"
+  def spray_paint(color)
+    "The #{@color} door looks great!"
+  end
 
 end
 
-big_door = spray_paint('green')
+big_door = Paint.new('Yellow')
 big_door
 
 # test
