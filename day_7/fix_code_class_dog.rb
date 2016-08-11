@@ -2,8 +2,8 @@
 Correct the class code Dog. Make it pass the tests.
 =end
 
-class  Dog
-  def  initialize (name, color)
+class Dog
+  def initialize (name, color)
     @name = name
     @color = color
   end
