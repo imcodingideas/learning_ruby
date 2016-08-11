@@ -27,6 +27,7 @@ class Window
 end
 
 window_1 = Window.new("green", 2)
+window_1
 
 #test
 p window_1.color == "green"
