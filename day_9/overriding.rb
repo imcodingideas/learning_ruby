@@ -3,18 +3,28 @@ What classes inherit behavior Dogand Cat superclass? Make the necessary tests to
 =end
 
 class Animal
+  def speak
+    'Hello!'
+  end
+end
+
+class Dog < Animal
+  attr_accessor :name
+
+  def initialize(n)
+    self.name = n
+  end
+
+  def speak
+    "#{self.name} say Guau!"
+  end
 
 end
 
-class Dog
-
+class Cat < Animal
 end
 
-class Cat
-
-end
-
-#test
+# Test
 drako = Dog.new("Drako")
 peto = Cat.new
 p drako.speak == "Drako say Guau!"
