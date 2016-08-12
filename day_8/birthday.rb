@@ -8,7 +8,6 @@ class Person
 
   @@age = 0
   def initialize(age)
-    @age = age
     @@age = age
   end
 
