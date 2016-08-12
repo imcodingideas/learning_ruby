@@ -1,34 +1,31 @@
-module SuperSay
-  def say(text)
-    text
+class SuperSay
+  attr_accessor :text
+  def initialize(text)
+    @text = text
   end
+
+  def say(text) ; end
 end
 
-class HtmlSay
-  include SuperSay
+class HtmlSay < SuperSay
   def say(text)
     prepare_text(text)
   end
-
   def prepare_text(text)
     "<p>#{text}</p>"
   end
 end
 
-class CssSay
-  include SuperSay
-
-  def prepare_text(text)
-    do_something_with(text)
-  end
-
-  def do_something_with(text)
+class CssSay < SuperSay
+  def say(text)
+    super(text)
     text
   end
 end
 
-doc = HtmlSay.new
-style = CssSay.new
+
+doc = HtmlSay.new('Hello')
+style = CssSay.new('Hello')
 
 #test
 p doc.say("You've refactored") == "<p>You've refactored</p>"
