@@ -37,7 +37,6 @@ string containing a meal, and look at the next hash, returning her key as a retu
 =end
 
 def food_group(str)
-
   food_groups = {
       "grain" => ['Rice', 'Trigo', 'Avena', 'Barley', 'Flour'],
       "vegetable" => ['Carrot', 'corn' 'Corn', 'Pumpkin', 'Papa'],
@@ -54,7 +53,6 @@ def food_group(str)
 end
 
 puts "**** Die done ****"
-
 class Die
   def initialize(number_of_sides)
     @number_of_sides = number_of_sides
@@ -83,7 +81,6 @@ die3 = Die.new(1)
 p die1.roll
 p die2.roll
 p die3.roll
-
 
 class MyCar
   attr_accessor :speed
@@ -161,7 +158,6 @@ p char_word_counter("This is a sentence") == "This sentence has 4 words & 15 cha
 p char_word_counter("This easy") == "This sentence has 2 words & 8 characters"
 p char_word_counter("This is a very complex line of code to test our program") == "This sentence has 12 words & 44 characters"
 p char_word_counter("And when she needs a shelter from reality she takes a dip in my daydreams") == "This sentence has 15 words & 59 characters"
-
 
 puts "*** food_group done ***"
 p food_group('Cream') == "dairy"

@@ -1,0 +1,48 @@
+=begin
+Refactor the code. Make sure everything continues to operate after you have finished.
+=end
+
+class Actor
+  attr_accessor :name, :birth_date
+
+  def initialize(name, birth_date)
+    @name = name
+    @birth_date = birth_date
+  end
+
+  def alive?
+    true
+  end
+
+  def to_s
+    "My birth_date is '#{@birth_date}', my name is #{@name}."
+  end
+end
+
+class Bill < Actor
+end
+
+class Enry < Actor
+end
+
+
+an_actor = Actor.new("Mike", "1/26/1926")
+an_actor.alive?
+an_actor.name = "Paul Newman"
+an_actor.birth_date = "1/26/1925"
+
+billy = Bill.new("Billy", "1/23/1926")
+enry = Enry.new("Enry", "11/01/1989")
+
+
+an_actor = Actor.new("Mike", "1/26/1926")
+an_actor.alive?
+an_actor.name = "Paul Newman"
+an_actor.birth_date = "1/26/1925"
+
+billy = Bill.new("Billy", "1/23/1926")
+enry = Enry.new("Enry", "11/01/1989")
+puts billy
+#=> My birth_date is '1/23/1926' and my name is Billy.
+puts enry
+#=> My birth_date is '11/01/1989' and my name is Enry.
