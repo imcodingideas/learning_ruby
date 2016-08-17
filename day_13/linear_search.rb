@@ -4,13 +4,11 @@ def linear_search(value, array)
     if value == array[counter]
       break
     else
-      if counter == array.length-1
-        return nil
-      end
+      return nil if counter == array.length-1
       counter +=1
     end
   end
-  return counter
+  counter
 end
 
 # Tests
@@ -19,7 +17,7 @@ p linear_search(20, random_numbers) == 3
 p linear_search(29, random_numbers) == nil
 
 def global_linear_search(string, array)
-  empty_array = []
+  empty_array = Array.new
   counter = 0
   loop do
     if string == array[counter]
@@ -34,5 +32,6 @@ def global_linear_search(string, array)
   empty_array
 end
 
+# Tests
 arr = 'entretenerse'.split('')
 p global_linear_search("e", arr) == [0, 4, 6, 8, 11]
