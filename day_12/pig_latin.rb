@@ -10,22 +10,31 @@ RETURN the pig-latin word
 
 =end
 
-def pig_word(string)
-  if string.split(/[aeiouAEIOU].*/) == []
-    string + "way"
-  else
-    n = 0
-    n += 1 while (string[n].count "aeiouAEIOU") != 1
-    string[n..string.length-1] + string.split(/[aeiouAEIOU].*/).first + "ay"
+def pig_word
+  input = ARGV
+  pig_latin = Array.new
+
+  input.each do |word|
+    if word.split(/[aeiouAEIOU].*/) == []
+      pig_latin.push(word + 'way')
+    else
+       n = 0
+       n += 1 while (word[n].count "aeiouAEIOU") != 1
+      pig_latin.push(word[n..word.length-1] + word.split(/[aeiouAEIOU].*/).first + "ay")
+    end
   end
+
+  pig_latin
 end
 
+p pig_word
 
-p pig_word("egg") == "eggway"
-p pig_word("duck") === "uckday"
-p pig_word("banana") == "ananabay"
-p pig_word("I") == "Iway"
-p pig_word("trash") == "ashtray"
+
+# p pig_word("egg") == "eggway"
+# p pig_word("duck") === "uckday"
+# p pig_word("banana") == "ananabay"
+# p pig_word("I") == "Iway"
+# p pig_word("trash") == "ashtray"
 
 
 =begin
@@ -40,12 +49,12 @@ space at the end
 =end
 
 
-def pig_sentence(string)
-  pig_latin = ""
-  string.split().each do |word|
-    pig_latin += pig_word(word).downcase + " "
-  end
-  pig_latin.strip!
-end
-
-p pig_sentence("This is a big fat pig egg who works at mcdonalds")
+# def pig_sentence(string)
+#   pig_latin = ""
+#   string.split().each do |word|
+#     pig_latin += pig_word(word).downcase + " "
+#   end
+#   pig_latin.strip!
+# end
+#
+# p pig_sentence("This is a big fat pig egg who works at mcdonalds")
