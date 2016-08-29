@@ -1,0 +1,18 @@
+CREATE TABLE users (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  first_name VARCHAR(64) NOT NULL,
+  last_name  VARCHAR(64) NOT NULL,
+  email VARCHAR(128) UNIQUE NOT NULL,
+  dob DATETIME NOT NULL,
+  gender VARCHAR(10) NOT NULL
+);
+
+INSERT INTO users
+	(first_name, last_name, email, dob, gender)
+	VALUES
+	('Joseph', 'Chambers', 'joseph@michael-chambers.com', '1984-01-23', 'male')
+
+
+ALTER TABLE users ADD COLUMN nickname VARCHAR(64)
+
+UPDATE users SET nickname = 'jcool' WHERE id = 1;
