@@ -43,24 +43,4 @@ class Chef < MiniActiveRecord::Model
     meals
   end
 
-
-  private
-
-  def insert!
-    self[:created_at] = DateTime.now
-    self[:updated_at] = DateTime.now
-
-    fields = self.attributes.keys
-    values = self.attributes.values
-    marks  = Array.new(fields.length) { '?' }.join(',')
-
-    insert_sql = "INSERT INTO chefs (#{fields.join(',')}) VALUES (#{marks})"
-
-    results = MiniActiveRecord::Model.execute(insert_sql, *values)
-
-    # This fetches the new primary key and updates this instance
-    self[:id] = MiniActiveRecord::Model.last_insert_row_id
-    results
-  end
-
 end

@@ -104,7 +104,26 @@ module MiniActiveRecord
 
 
     private
-    
+
+    def insert!
+      self[:created_at] = DateTime.now
+      self[:updated_at] = DateTime.now
+
+      fields = self.attributes.keys
+      values = self.attributes.values
+      marks  = Array.new(fields.length) { '?' }.join(',')
+
+      p self.class
+
+      insert_sql = "INSERT INTO #{self.class.to_s}s (#{fields.join(',')}) VALUES (#{marks})"
+
+      results = MiniActiveRecord::Model.execute(insert_sql, *values)
+
+      # This fetches the new primary key and updates this instance
+      self[:id] = MiniActiveRecord::Model.last_insert_row_id
+      results
+    end
+
     def update!
       self[:updated_at] = DateTime.now
 
