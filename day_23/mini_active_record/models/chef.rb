@@ -20,9 +20,7 @@ class Chef < MiniActiveRecord::Model
     # This defines the value even if it's not present in attributes
     @attributes = {}
 
-    Chef.attribute_names.each do |name|
-      @attributes[name] = attributes[name]
-    end
+    Chef.attribute_names.each { |name| @attributes[name] = attributes[name] }
 
     @old_attributes = @attributes.dup
   end
