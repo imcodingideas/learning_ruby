@@ -1,5 +1,7 @@
 class Meal < MiniActiveRecord::Model
 
+  attr_reader :attributes, :old_attributes
+
   def self.create(attributes)
     record = self.new(attributes)
     record.save
@@ -8,8 +10,6 @@ class Meal < MiniActiveRecord::Model
   end
 
   self.attribute_names = [:id, :name, :chef_id, :created_at, :updated_at]
-
-  attr_reader :attributes, :old_attributes
 
   # e.g., Meal.new(id: 1, name: 'Chicken', created_at: '2012-12-01 05:54:30')
   def initialize(attributes = {})
