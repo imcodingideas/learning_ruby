@@ -48,10 +48,6 @@ class Meal < MiniActiveRecord::Model
     chef
   end
 
-  def new_record?
-    self[:id].nil?
-  end
-
   def save
     if new_record?
       results = insert!

@@ -40,12 +40,6 @@ class Chef < MiniActiveRecord::Model
     results
   end
 
-  # We say a record is "new" if it doesn't have a defined primary key in its
-  # attributes
-  def new_record?
-    self[:id].nil?
-  end
-
   # e.g., chef[:first_name] #=> 'Steve'
   def [](attribute)
     raise_error_if_invalid_attribute!(attribute)

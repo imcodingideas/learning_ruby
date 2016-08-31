@@ -19,6 +19,12 @@ module MiniActiveRecord
       self.where('id = ?', pk).first
     end
 
+    # We say a record is "new" if it doesn't have a defined primary key in its
+    # attributes
+    def new_record?
+      self[:id].nil?
+    end
+
     def self.database=(filename)
       @filename = filename
       @connection = SQLite3::Database.new(@filename)
