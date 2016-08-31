@@ -49,11 +49,7 @@ class Meal < MiniActiveRecord::Model
   end
 
   def save
-    if new_record?
-      results = insert!
-    else
-      results = update!
-    end
+    new_record? ? results = insert! : results = update!
 
     # When we save, remove changes between new and old attributes
     @old_attributes = @attributes.dup
