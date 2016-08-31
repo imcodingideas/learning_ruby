@@ -18,9 +18,7 @@ class Meal < MiniActiveRecord::Model
 
     @attributes = {}
 
-    Meal.attribute_names.each do |name|
-      @attributes[name] = attributes[name]
-    end
+    Meal.attribute_names.each { |name| @attributes[name] = attributes[name] }
 
     @old_attributes = @attributes.dup
   end

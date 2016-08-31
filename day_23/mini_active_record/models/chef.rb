@@ -28,11 +28,7 @@ class Chef < MiniActiveRecord::Model
   end
 
   def save
-    if new_record?
-      results = insert!
-    else
-      results = update!
-    end
+    new_record? ? results = insert! : results = update!
 
     # When we save, remove changes between new and old attributes
     @old_attributes = @attributes.dup
@@ -59,10 +55,7 @@ class Chef < MiniActiveRecord::Model
   end
 
   def add_meals(meals)
-    meals.each do |meal|
-      meal.chef = self
-    end
-
+    meals.each { |meal| meal.chef = self }
     meals
   end
 
