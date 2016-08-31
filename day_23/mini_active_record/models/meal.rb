@@ -23,18 +23,6 @@ class Meal < MiniActiveRecord::Model
     @old_attributes = @attributes.dup
   end
 
-  def [](attribute)
-    raise_error_if_invalid_attribute!(attribute)
-
-    @attributes[attribute]
-  end
-
-  def []=(attribute, value)
-    raise_error_if_invalid_attribute!(attribute)
-
-    @attributes[attribute] = value
-  end
-
   def chef
     Chef.where('id = ?', self[:chef_id])
   end
