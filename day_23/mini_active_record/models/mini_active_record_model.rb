@@ -79,9 +79,7 @@ module MiniActiveRecord
       # and
       #   raise_error_if_invalid_attribute!(["id", "name"])
       Array(attributes).each do |attribute|
-        unless valid_attribute?(attribute)
-          raise InvalidAttributeError, "Invalid attribute for #{self.class}: #{attribute}"
-        end
+        raise InvalidAttributeError, "Invalid attribute for #{self.class}: #{attribute}" unless valid_attribute?(attribute)
       end
     end
 
