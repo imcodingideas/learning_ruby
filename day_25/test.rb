@@ -61,3 +61,59 @@ cards.each do |card|
 end
 
 show(cards)
+
+
+#Athlete class
+class Athlete
+
+# method to validate time
+
+# method for exercise
+
+# method for speed athlete
+
+end
+
+#Runner class
+
+#Swimmer class
+
+#Cyclist class
+
+
+#tests
+
+#instances of athletes with distance in meters
+runner = Runner.new()
+swimmer = Swimmer.new(50, 10)
+cyclist = Cyclist.new(70, 27)
+athletes = [runner, swimmer, cyclist]
+
+athletes.each do |athlete|
+# What kind of athlete is it?
+  puts "#{athlete.class} responds to:"
+  puts "\tAthlete speed: #{athlete.respond_to?(:speed) == true}"
+  puts "\tGet Athlete time: #{athlete.respond_to?(:total_time) == true}"
+  puts "\tSet Athlete time: #{athlete.respond_to?(:total_time=) == true}"
+  puts "\tSpeed record: #{athlete.respond_to?(:speed_record) == true}"
+  puts "\tGet Distance: #{athlete.respond_to?(:total_distance) == true}"
+  puts "\tSet Distance: #{athlete.respond_to?(:total_distance=) == true}"
+  puts "\trun method: #{athlete.respond_to?(:run) == true}" if athlete == runner
+  puts "\tswim method: #{athlete.respond_to?(:swim) == true}" if athlete == swimmer
+  puts "\tride_bike method: #{athlete.respond_to?(:ride_bike) == true}" if athlete == cyclist
+  puts "\n\n"
+end
+
+#test for runner
+
+#test para runner con distancia = 0
+p runner.run == "Ran 0 meters, time: 0 seconds, speed: 0 m/s"
+
+#test for runner during exercise, increases distance = 20 meters and time = 7 seconds
+runner.new_workout(20, 7)
+
+#test for runner with distance = 20 meters and time = 7 seconds
+p runner.run == "Ran 20 meters, time: 7 seconds, speed: 2.86 m/s"
+
+#test for swimmer with distance = 50
+p swimmer.swim == "Swam 50 meters, time: 10 seconds, speed: 5.0 m/s"
