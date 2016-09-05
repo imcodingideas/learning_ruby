@@ -1,0 +1,46 @@
+Josephs-MacBook-Pro:mini_active_record joseph$ irb
+2.3.0 :001 > 10-1
+ => 9
+2.3.0 :002 > 1+2
+ => 3
+2.3.0 :003 > 9*10
+ => 90
+2.3.0 :004 > (1..10).each do |i|
+2.3.0 :005 >     puts "I wrote a loop. yay"
+2.3.0 :006?>   end
+I wrote a loop. yay
+I wrote a loop. yay
+I wrote a loop. yay
+I wrote a loop. yay
+I wrote a loop. yay
+I wrote a loop. yay
+I wrote a loop. yay
+I wrote a loop. yay
+I wrote a loop. yay
+I wrote a loop. yay
+ => 1..10
+2.3.0 :007 > array = [1,2,3,4]
+ => [1, 2, 3, 4]
+2.3.0 :008 > array.inspect
+ => "[1, 2, 3, 4]"
+2.3.0 :009 > print array
+[1, 2, 3, 4] => nil
+2.3.0 :010 > p array
+[1, 2, 3, 4]
+ => [1, 2, 3, 4]
+2.3.0 :011 > something = "some string"
+ => "some string"
+2.3.0 :012 > puts something
+some string
+ => nil
+2.3.0 :013 > something.upcase!
+ => "SOME STRING"
+2.3.0 :014 > Math.sqrt(5)
+ => 2.23606797749979
+2.3.0 :015 > def doMath(str)
+2.3.0 :016?>   str * 5
+2.3.0 :017?>   end
+ => :doMath
+2.3.0 :018 > doMath(5)
+ => 25
+2.3.0 :019 >
