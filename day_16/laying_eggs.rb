@@ -10,6 +10,7 @@ class Egg
   end
 end
 
+
 class LayingHen
 
   attr_reader :age
